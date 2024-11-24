@@ -1,18 +1,18 @@
 # Using descriptors, compute the taproot address at index 100 derived from this extended public key:
 #   `xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2`
-# bitcoin-cli validateaddress <endereco>
 # function([derivation-path]key)#checksum
 # Fingerprint: fbab8d32
 # checksum: 7pxakmxw
 # bc1puu4c2daa3zdnzcsss8p0myhhhp5jde593a5p9yhj5g0vvgp4vkesv6w5fz
+# bitcoin-cli validateaddress <endereco>
 
-# bitcoin-cli getdescriptorinfo "tr([fbab8d32/0'/0'/100']xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2)"
+# bitcoin-cli getdescriptorinfo "tr([fbab8d32/0/0/100]xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2)"
 # bitcoin-cli deriveaddresses "tr([fbab8d32/0'/0'/100']xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2)#{checksum}"
 
 # Definições iniciais
 XPUB="xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2"
 FINGERPRINT="fbab8d32"
-DERIVATION_PATH="0'/0'/100'"
+DERIVATION_PATH="0/0/100"
 
 # Construção do descriptor base
 DESCRIPTOR="tr([$FINGERPRINT/$DERIVATION_PATH]$XPUB)"
