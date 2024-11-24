@@ -41,3 +41,6 @@ FIRST_ADDRESS=$(echo "$ADDRESS" | jq -r '.[0]')
 
 # Exibindo o primeiro endereço derivado
 echo "$FIRST_ADDRESS"
+
+
+# ERRADA
