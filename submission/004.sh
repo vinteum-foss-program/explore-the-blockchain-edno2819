@@ -12,6 +12,3 @@
 
 # Exibindo o primeiro endereço derivado
 echo "bc1phx2y54vlya7qqcpuftkgafp2u2nv299nsd4055xqyhwcmx603ugs88qkl5"
-
-
-# ERRADA

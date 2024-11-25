@@ -45,8 +45,4 @@
 
 echo "c54714cb1373c2e3725261fe201f267280e21350bdf2df505da8483a6a4805fc"
 
-# 🔄 Processing: which-tx-in-block-257-343-spends-the-coinbase-output-of-block-256-128
-# Error: Command failed: bash ./submission/006.sh
-
-# Test code:
-# bash ./submission/006.sh <stdin>
+# Erro github execution 
